@@ -51,3 +51,21 @@
         letter-spacing: 1px;
     }
 }
+
+.wrapper {
+    align-items: stretch;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.wrapper::before {
+    background: #153d77;
+    content: " ";
+    height: 264px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
