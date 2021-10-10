@@ -1,34 +1,35 @@
 .dropdown-menu {
-    gap: .25rem;
-    padding: .5rem;
+	gap: .25rem;
+	padding: .5rem;
 }
 
 .dropdown-item {
-    border-radius: .25rem;
+	border-radius: .25rem;
 }
 
 .list-group-item {
-    border-right: 0;
-    border-left: 0;
+	border-right: 0;
+	border-left: 0;
 }
 
 .list-group-item h6 {
-    font-size: 0.8rem;
+	font-size: 0.8rem;
 }
 
 .container-fluid {
-    width: 95%;
+	width: 95%;
 }
 
 .navbar {
-    position: relative;
+	display: flex;
+	position: relative;
 }
 
 .form-control {
-    background: transparent;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    color: #fff;
-    width: 200px;
+	background: transparent;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	color: #fff;
+	width: 200px;
 }

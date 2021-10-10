@@ -1,71 +1,77 @@
+// .wrapper {
+// 	align-items: stretch;
+// 	display: block;
+// 	overflow: hidden;
+// 	position: relative;
+// 	width: 100%;
+// }
+
+.page-wrapper::before {
+	background: #153d77;
+	content: " ";
+	height: 264px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+// .page-content {
+// 	height: 100vh;
+// 	display: flex;
+// 	position: relative;
+// }
+.page-wrapper.toggled .sidebar {
+	left: -300px;
+}
+
 .page-wrapper {
-    height: 100vh;
+	height: 100vh;
 
-    .page-content {
-        display: inline-block;
-        width: 100%;
-        padding-top: 20px;
-        transition: padding-left .3s ease;
+	.page-content {
+		display: inline-block;
+		width: 100%;
+		transition: padding-left .3s ease;
 
-        @media screen and (min-width: 768px) {
-            padding-left: 300px;
-        }
+		@media screen and (min-width: 768px) {
+			padding-left: 230px;
+		}
 
-        .overlay {
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 998;
-            background: #000;
-            opacity: .5;
-            display: none;
+		.overlay {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 998;
+			background: #000;
+			opacity: .5;
+			display: none;
 
-            &.show {
+			&.show {
+				@media screen and (max-width: 768px) {
+					display: block;
+				}
+			}
+		}
+	}
 
-                @media screen and (max-width: 768px) {
-                    display: block;
-                }
-            }
-        }
-    }
+	.sidebar {
+		left: 0px;
+	}
 
-    .sidebar {
-        left: 0px;
-    }
+	&.toggled {
+		.page-content {
+			padding-left: 0;
+		}
+	}
 
-    &.toggled {
-
-        .page-content {
-            padding-left: 0;
-        }
-    }
-
-    .attribution {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        padding: 5px;
-        margin: 5px;
-        letter-spacing: 1px;
-    }
-}
-
-.wrapper {
-    align-items: stretch;
-    display: block;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-}
-
-.wrapper::before {
-    background: #153d77;
-    content: " ";
-    height: 264px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+	.attribution {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		padding: 5px;
+		margin: 5px;
+		letter-spacing: 1px;
+	}
 }
