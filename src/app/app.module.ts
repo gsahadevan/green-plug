@@ -14,6 +14,8 @@ import { CarouselComponent } from './pages/carousel/carousel.component';
 import { BlankPageComponent } from './pages/blank-page/blank-page.component';
 import { CardsComponent } from './pages/cards/cards.component';
 import { ECommComponent } from './pages/dashboards/e-commerce/e-comm.component';
+import { WizardComponent } from './pages/wizard/wizard.component';
+import { OffcanvasComponent } from './pages/offcanvas/offcanvas.component';
 
 @NgModule({
 	declarations: [
@@ -27,7 +29,9 @@ import { ECommComponent } from './pages/dashboards/e-commerce/e-comm.component';
 		CarouselComponent,
 		BlankPageComponent,
 		CardsComponent,
-		ECommComponent
+		OffcanvasComponent,
+		ECommComponent,
+		WizardComponent
 	],
 	imports: [
 		BrowserModule,
