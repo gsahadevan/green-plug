@@ -13,7 +13,8 @@ import {
 	CarouselComponent,
 	ChartsComponent,
 	DashboardComponent,
-	SigninComponent
+	SigninComponent,
+	TasksComponent
 } from './pages/interfaces';
 import { AnalyticsComponent, DefaultComponent, ECommComponent } from './pages/dashboards';
 import { GoogleMapsComponent, VectorMapsComponent } from './pages/maps';
@@ -29,6 +30,7 @@ import { GoogleMapsComponent, VectorMapsComponent } from './pages/maps';
 		SigninComponent,
 		CarouselComponent,
 		BlankPageComponent,
+		TasksComponent,
 		AnalyticsComponent,
 		DefaultComponent,
 		ECommComponent,

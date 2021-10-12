@@ -7,7 +7,8 @@ import {
 	CarouselComponent,
 	ChartsComponent,
 	DashboardComponent,
-	SigninComponent
+	SigninComponent,
+	TasksComponent
 } from './pages/interfaces';
 import { GoogleMapsComponent, VectorMapsComponent } from './pages/maps';
 
@@ -20,6 +21,7 @@ const routes: Routes = [
 	{ path: 'signin', component: SigninComponent },
 	{ path: 'carousel', component: CarouselComponent },
 	{ path: 'blank-page', component: BlankPageComponent },
+	{ path: 'tasks', component: TasksComponent },
 	{ path: 'cards', component: CardsComponent },
 	{ path: 'offcanvas', component: OffcanvasComponent },
 	{ path: 'placeholders', component: PlaceholdersComponent },
