@@ -7,15 +7,16 @@ import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent, HeaderComponent, SidebarComponent } from './layouts';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { ChartsComponent } from './pages/charts/charts.component';
-import { SigninComponent } from './pages/signin/signin.component';
-import { CarouselComponent } from './pages/carousel/carousel.component';
-import { BlankPageComponent } from './pages/blank-page/blank-page.component';
-import { CardsComponent } from './pages/cards/cards.component';
-import { ECommComponent } from './pages/dashboards/e-commerce/e-comm.component';
-import { WizardComponent } from './pages/wizard/wizard.component';
-import { OffcanvasComponent } from './pages/offcanvas/offcanvas.component';
+import { CardsComponent, OffcanvasComponent, PlaceholdersComponent, WizardComponent } from './pages/components';
+import {
+	BlankPageComponent,
+	CarouselComponent,
+	ChartsComponent,
+	DashboardComponent,
+	SigninComponent
+} from './pages/interfaces';
+import { AnalyticsComponent, DefaultComponent, ECommComponent } from './pages/dashboards';
+import { GoogleMapsComponent, VectorMapsComponent } from './pages/maps';
 
 @NgModule({
 	declarations: [
@@ -28,10 +29,15 @@ import { OffcanvasComponent } from './pages/offcanvas/offcanvas.component';
 		SigninComponent,
 		CarouselComponent,
 		BlankPageComponent,
+		AnalyticsComponent,
+		DefaultComponent,
+		ECommComponent,
 		CardsComponent,
 		OffcanvasComponent,
-		ECommComponent,
-		WizardComponent
+		PlaceholdersComponent,
+		WizardComponent,
+		GoogleMapsComponent,
+		VectorMapsComponent
 	],
 	imports: [
 		BrowserModule,

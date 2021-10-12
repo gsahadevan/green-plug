@@ -11,21 +11,21 @@
 		</div>
 		<ul class="nav nav-pills flex-column mb-auto">
 			<li class="sidebar-header">Main</li>
-			<li class="sidebar-item active">
-				<a data-bs-target="#dashboards" data-bs-toggle="collapse" class="sidebar-link" aria-expanded="true">
+			<li class="sidebar-item">
+				<a data-bs-target="#dashboards" data-bs-toggle="collapse" class="sidebar-link collapsed"
+					aria-expanded="true">
 					<i class="align-middle me-2 fas fa-fw fa-home"></i>
 					<span class="align-middle">Dashboards</span>
 				</a>
-				<ul id="dashboards" class="sidebar-dropdown list-unstyled collapse show" data-bs-parent="#sidebar">
+				<ul id="dashboards" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="dashboard-default.html" routerLink="/dashboard-e-comm"
-							routerLinkActive="active">Default</a>
+						<a class="sidebar-link" href="#" routerLink="/default" routerLinkActive="active">Default</a>
 					</li>
 					<li class="sidebar-item active">
-						<a class="sidebar-link" href="dashboard-analytics.html">Analytics</a>
+						<a class="sidebar-link" href="#" routerLink="/analytics" routerLinkActive="active">Analytics</a>
 					</li>
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="dashboard-e-commerce.html" routerLink="/dashboard-e-comm"
+						<a class="sidebar-link" href="#" routerLink="/dashboard-e-comm"
 							routerLinkActive="active">E-commerce</a>
 					</li>
 				</ul>
@@ -38,49 +38,63 @@
 				</a>
 				<ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="pages-settings.html">Settings</a>
+						<a class="sidebar-link" href="#">Settings</a>
 					</li>
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="pages-clients.html">Clients
+						<a class="sidebar-link" href="#">Clients
 							<span class="sidebar-badge badge rounded-pill bg-primary">New</span></a>
 					</li>
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="pages-invoice.html">Invoice</a>
+						<a class="sidebar-link" href="#">Invoice</a>
 					</li>
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="pages-pricing.html">Pricing</a>
+						<a class="sidebar-link" href="#">Pricing</a>
 					</li>
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="pages-tasks.html">Tasks</a>
+						<a class="sidebar-link" href="#">Tasks</a>
 					</li>
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="pages-chat.html">Chat
+						<a class="sidebar-link" href="#">Chat
 							<span class="sidebar-badge badge rounded-pill bg-primary">New</span></a>
 					</li>
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="pages-blank.html" routerLink="/blank-page"
-							routerLinkActive="active">Blank Page</a>
+						<a class="sidebar-link" href="#" routerLink="/blank-page" routerLinkActive="active">Blank
+							Page</a>
 					</li>
 				</ul>
 			</li>
 			<li class="sidebar-header">Elements</li>
-			<li class="sidebar-item active">
-				<a data-bs-target="#components" data-bs-toggle="collapse" class="sidebar-link" aria-expanded="true">
+			<li class="sidebar-item">
+				<a data-bs-target="#components" data-bs-toggle="collapse" class="sidebar-link collapsed"
+					aria-expanded="false">
 					<i class="align-middle me-2 fas fa-fw fa-home"></i>
 					<span class="align-middle">Components</span>
 				</a>
-				<ul id="components" class="sidebar-dropdown list-unstyled collapse show" data-bs-parent="#sidebar">
+				<ul id="components" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="dashboard-default.html" routerLink="/dashboard-e-comm"
-							routerLinkActive="active">Card</a>
+						<a class="sidebar-link" href="#" routerLink="/cards" routerLinkActive="active">Card</a>
 					</li>
-					<li class="sidebar-item active">
-						<a class="sidebar-link" href="dashboard-analytics.html" routerLink="/offcanvas"
-							routerLinkActive="active">Offcanvas</a>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="#" routerLink="/offcanvas" routerLinkActive="active">Offcanvas</a>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="#" routerLink="/placeholders"
+							routerLinkActive="active">Placeholders</a>
 					</li>
 					<li class="sidebar-item">
 						<a class="sidebar-link" href="#" routerLink="/wizard" routerLinkActive="active">Wizard</a>
 					</li>
+				</ul>
+			</li>
+			<li class="sidebar-item">
+				<a data-bs-target="#maps" data-bs-toggle="collapse" class="sidebar-link collapsed" aria-expanded="true">
+					<i class="align-middle me-2 fas fa-fw fa-map-marker-alt"></i> <span class="align-middle">Maps</span>
+				</a>
+				<ul id="maps" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+					<li class="sidebar-item"><a class="sidebar-link" href="#" routerLink="/google-maps"
+							routerLinkActive="active">Google Maps</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" href="#" routerLink="/vector-maps"
+							routerLinkActive="active">Vector Maps</a></li>
 				</ul>
 			</li>
 			<!-- <li>

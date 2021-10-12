@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { BlankPageComponent } from './pages/blank-page/blank-page.component';
-import { CardsComponent } from './pages/cards/cards.component';
-import { CarouselComponent } from './pages/carousel/carousel.component';
-import { ChartsComponent } from './pages/charts/charts.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { ECommComponent } from './pages/dashboards/e-commerce/e-comm.component';
-import { OffcanvasComponent } from './pages/offcanvas/offcanvas.component';
-import { SigninComponent } from './pages/signin/signin.component';
-import { WizardComponent } from './pages/wizard/wizard.component';
+import { CardsComponent, OffcanvasComponent, PlaceholdersComponent, WizardComponent } from './pages/components';
+import { AnalyticsComponent, DefaultComponent, ECommComponent } from './pages/dashboards';
+import {
+	BlankPageComponent,
+	CarouselComponent,
+	ChartsComponent,
+	DashboardComponent,
+	SigninComponent
+} from './pages/interfaces';
+import { GoogleMapsComponent, VectorMapsComponent } from './pages/maps';
 
 const routes: Routes = [
-	{ path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+	{ path: '', redirectTo: '/default', pathMatch: 'full' },
+	{ path: 'default', component: DefaultComponent },
+	{ path: 'analytics', component: AnalyticsComponent },
 	{ path: 'dashboard', component: DashboardComponent },
 	{ path: 'charts', component: ChartsComponent },
 	{ path: 'signin', component: SigninComponent },
@@ -19,8 +22,11 @@ const routes: Routes = [
 	{ path: 'blank-page', component: BlankPageComponent },
 	{ path: 'cards', component: CardsComponent },
 	{ path: 'offcanvas', component: OffcanvasComponent },
+	{ path: 'placeholders', component: PlaceholdersComponent },
 	{ path: 'wizard', component: WizardComponent },
-	{ path: 'dashboard-e-comm', component: ECommComponent }
+	{ path: 'dashboard-e-comm', component: ECommComponent },
+	{ path: 'google-maps', component: GoogleMapsComponent },
+	{ path: 'vector-maps', component: VectorMapsComponent }
 ];
 
 @NgModule({
