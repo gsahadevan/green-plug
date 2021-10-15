@@ -23,6 +23,8 @@ ng serve
 [Screenshot-2021-10-14-at-14-46-24.png](https://postimg.cc/ZWvxgBBK)
 ![Screenshot](https://postimg.cc/ZWvxgBBK "Green Plug")
 
+[Screenshot](https://i.postimg.cc/gGPCBK5M/Screenshot-2021-10-14-at-14-46-24.png)
+
 # Inspirations
 
 The design is copied from https://spark.bootlab.io/dashboard-default.html
