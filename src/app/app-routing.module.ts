@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CardsComponent, OffcanvasComponent, PlaceholdersComponent, WizardComponent } from './pages/components';
+import { ButtonsComponent } from './pages/components/buttons/buttons.component';
 import { AnalyticsComponent, DefaultComponent, ECommComponent } from './pages/dashboards';
 import {
 	BlankPageComponent,
@@ -22,6 +23,7 @@ const routes: Routes = [
 	{ path: 'carousel', component: CarouselComponent },
 	{ path: 'blank-page', component: BlankPageComponent },
 	{ path: 'tasks', component: TasksComponent },
+	{ path: 'buttons', component: ButtonsComponent },
 	{ path: 'cards', component: CardsComponent },
 	{ path: 'offcanvas', component: OffcanvasComponent },
 	{ path: 'placeholders', component: PlaceholdersComponent },

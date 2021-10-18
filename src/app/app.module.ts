@@ -18,6 +18,7 @@ import {
 } from './pages/interfaces';
 import { AnalyticsComponent, DefaultComponent, ECommComponent } from './pages/dashboards';
 import { GoogleMapsComponent, VectorMapsComponent } from './pages/maps';
+import { ButtonsComponent } from './pages/components/buttons/buttons.component';
 
 @NgModule({
 	declarations: [
@@ -34,6 +35,7 @@ import { GoogleMapsComponent, VectorMapsComponent } from './pages/maps';
 		AnalyticsComponent,
 		DefaultComponent,
 		ECommComponent,
+		ButtonsComponent,
 		CardsComponent,
 		OffcanvasComponent,
 		PlaceholdersComponent,
