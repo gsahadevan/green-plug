@@ -656,3 +656,11 @@ a.sidebar-link {
 	text-decoration: none;
 	transition: background .1s ease-in-out;
 }
+
+.close-side-bar {
+	display: none !important;
+
+	@media screen and (max-width: 768px) {
+		display: flex !important;
+	}
+}

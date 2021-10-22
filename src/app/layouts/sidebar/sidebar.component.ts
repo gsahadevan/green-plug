@@ -1,12 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import {
-    trigger,
-    state,
-    style,
-    transition,
-    animate,
-} from '@angular/animations';
-import { SidebarService } from './sidebar.service';
+import {Component, OnInit} from '@angular/core';
+import {trigger, state, style, transition, animate} from '@angular/animations';
+import {SidebarService} from './sidebar.service';
+import {AppService} from 'src/app/services/app.service';
 
 @Component({
     selector: 'app-sidebar',
@@ -14,15 +9,15 @@ import { SidebarService } from './sidebar.service';
     styleUrls: ['./sidebar.component.scss'],
     animations: [
         trigger('slide', [
-            state('up', style({ height: 0 })),
-            state('down', style({ height: '*' })),
-            transition('up <=> down', animate(200)),
-        ]),
-    ],
+            state('up', style({height: 0})),
+            state('down', style({height: '*'})),
+            transition('up <=> down', animate(200))
+        ])
+    ]
 })
 export class SidebarComponent implements OnInit {
     menus = [] as any;
-    constructor(public sidebarservice: SidebarService) {
+    constructor(private appService: AppService, public sidebarservice: SidebarService) {
         this.menus = sidebarservice.getMenuList();
     }
 
@@ -54,5 +49,13 @@ export class SidebarComponent implements OnInit {
 
     hasBackgroundImage() {
         return this.sidebarservice.hasBackgroundImage;
+    }
+
+    toggleSidebar() {
+        this.appService.toggleSidebar();
+        this.sidebarservice.setSidebarState(!this.sidebarservice.getSidebarState());
+
+        const sidebar = <HTMLDivElement>document.getElementById('page-wrapper');
+        sidebar.classList.toggle('toggled');
     }
 }
